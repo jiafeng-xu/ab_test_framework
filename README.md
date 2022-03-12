@@ -3,7 +3,7 @@
 #### How to use the tool to generate XP metrics results:
 
 
-1.   Activate the function - **test_result**
+1.   Activate the function - **'test_result'**
 2.   Prepare the SQL query 
 3.   Make sure the query returns the correct structure as requested
 4.   Run the function on the SQL output 
