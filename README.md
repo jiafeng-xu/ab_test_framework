@@ -17,3 +17,18 @@
 ##### 3.SQL output 需要确保**表结构**和**字段名称**与以下要求一致以正常运行
 * Ratio-based test --> metric, exp, variation, convert, total
 * Mean-based T-test --> metric, exp, variation, avg, stddev, sample size
+
+##### 4.Example / 案例教学
+1. Want to know if "user-level MARGIN %" of XP is significantly changed
+2. Write a SQL query that has an output as  
+"""
+select 
+  'gross margin' as metric
+  , id|| ' - ' ||name as exp
+  , variation
+  , avg(gm_base) as avg
+  , stddev(gm_base) as stddev
+  , count(user_id) as n
+  from (....)
+"""
+3. Run the function on the SQL query
