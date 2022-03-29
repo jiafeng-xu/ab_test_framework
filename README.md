@@ -21,7 +21,7 @@
 ##### 4.Example / 案例教学
 1. Want to know if "user-level MARGIN %" of XP is significantly changed
 2. Write a SQL query that has an output as  
- **select
+ **select**
  'gross margin' as metric
  , experiment_id
  , variation
