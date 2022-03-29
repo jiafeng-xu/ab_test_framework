@@ -23,7 +23,7 @@
 2. Write a SQL query that has an output as  
  select 
  'gross margin' as metric
- , id|| ' - ' ||name as exp
+ , experiment_id
  , variation
  , avg(gm_base) as avg
  , stddev(gm_base) as stddev
