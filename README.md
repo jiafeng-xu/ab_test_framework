@@ -22,13 +22,13 @@
 1. Want to know if "user-level MARGIN %" of XP is significantly changed
 2. Write a SQL query that has an output as  
 """
-select 
-  'gross margin' as metric
-  , id|| ' - ' ||name as exp
-  , variation
-  , avg(gm_base) as avg
-  , stddev(gm_base) as stddev
-  , count(user_id) as n
-  from (....)
+######## select 
+ ########  'gross margin' as metric
+ ########  , id|| ' - ' ||name as exp
+ ########  , variation
+ ########  , avg(gm_base) as avg
+ ########  , stddev(gm_base) as stddev
+ ########  , count(user_id) as n
+ ########  from (....)
 """
 3. Run the function on the SQL query
