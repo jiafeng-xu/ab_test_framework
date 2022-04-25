@@ -23,10 +23,10 @@
   * total: denominator
 * 'ttest' function: Mean-based T-test
   * SQL output must return 4 columns:
-    * col, variation, id, metrics
+    * col, variation, traffic_id, metrics
   * col: (optional) dimensions such as language, device_type, etc. Assign NULL / '' if dimension analysis is not needed. When multiple dimensions are needed, please concat them into col (e.p. language || '-' ||device_type as col).
   * variation: please return 1 & 2 as the result
-  * id: granularity of the XP (device_id/user_id)
+  * traffic_id: granularity of the XP (device_id/user_id)
   * metrics: returned values for metrics
 
 ##### 4.Example / 案例教学
