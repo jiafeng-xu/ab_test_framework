@@ -30,15 +30,14 @@
   * metrics: returned values for metrics
 
 ##### 4.Example / 案例教学
-1. Want to know if "user-level MARGIN %" of XP is significantly changed
+1. Want to know if "user-level booking & margin across languages" of XP is significantly changed
 2. Write a SQL query that has an output as  
  **select**
- 'gross margin' as metric
- , experiment_id
+ language as col
  , variation
- , avg(gm_base) as avg
- , stddev(gm_base) as stddev
- , count(user_id) as n
+ , user_id
+ , sum(total) as avg
+ , sum(gm_margin) as margin
  from (....)
 
 3. Run the function on the SQL query
